@@ -1,0 +1,95 @@
+body {
+	color: #333333;
+	font-family: Arial medium;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+p {
+	font-family: Arial medium;
+}
+
+.main-content {
+	flex-grow: 1;
+}
+
+footer {
+	color: #888888;
+	border-top: 1px solid #eeeeee;
+	margin-top: 16px;
+	padding: 16px 0;
+}
+
+header {
+	margin-top: 16px;
+	margin-bottom: 48px;
+}
+
+h1 {
+	font-size: 64px;
+	margin-bottom: 16px;
+}
+
+header a {
+	color: #888888;
+	margin-right: 16px;
+	text-decoration: none;
+}
+
+.portrait {
+	width: 250px;
+}
+
+.input {
+	border-radius: 4px;
+	background-color: #e2dada;
+	border-style: none;
+	padding: 12px;
+	font-size: 16px;
+}
+
+.button {
+	border-radius: 4px;
+	background-color: #888888;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+	padding: 12px;
+	width: 100px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover {
+	background-color: rgb(107, 54, 177);
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
