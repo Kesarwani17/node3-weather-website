@@ -8,14 +8,16 @@ const forecast = (latitude,longitude,callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
-            console.log(body.current)
+            //console.log(body.current)
             callback (undefined, {
                 weather: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
                 feels_like: body.current.feelslike,
                 location: body.location.region,
                 cloud_cover: body.current.cloudcover,
-                humidity: body.current.humidity
+                humidity: body.current.humidity,
+                precip: body.current.precip,
+                weatherImg: body.current.weather_icons[0]
             })
         }
     })
