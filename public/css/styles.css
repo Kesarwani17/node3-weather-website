@@ -93,3 +93,17 @@ header a {
 	opacity: 1;
 	right: 0;
 }
+
+#btn-location {
+	border-radius: 4px;
+	background-color: #888888;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+	padding: 12px;
+	width: 323px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
